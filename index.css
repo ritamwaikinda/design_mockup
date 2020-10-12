@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+header {
+    flex-direction: row;
+    justify-content: flex-end;
+
+    /* list-style-type: none;
+    width: 7em;
+    text-align: center;
+    float: left;
+   }
+    {
+    text-decoration: none; 
+    color: black;
+    display: block;
+    background-color: #EEEEFF;
+    box-shadow: 5px 5px 5px gray;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    border-radius: 5px;
+    border: 3px outset #EEEEFF;
+   }
+   {
+    background-color: #DDDDEE;
+    box-shadow: 3px 3px 3px gray;
+    border: none;
+   } */
+   .logo {
+
+}
+.menu {
+    
+}
+    #navtop {
+    padding: more to the right;
+    }
+.navigation {
+    .button {
+         border: none;
+        color: <text color>;
+         padding: 10px 25px;
+         text-align: center;
+        text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 4px;
+         cursor: pointer;
+         border-radius: 8px;
+   }
+.button #login {
+    background-color: orangered>;
+    }
+    .button #login {
+        background-color: orangered>;
+}
+
+
+.splash {
+    flex-direction: row;
+}
+
+.school {
+
+}
+
+.social {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.button {
+    background-color: <background color>;
+     border: none;
+    color: <text color>;
+     padding: 10px 25px;
+     text-align: center;
+    text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 4px;
+     cursor: pointer;
+     border-radius: 8px;
+   }
