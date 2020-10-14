@@ -1,96 +1,157 @@
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-  
+
 header {
-    flex-direction: row;
-    justify-content: flex-end;
-
-    /* list-style-type: none;
-    width: 7em;
-    text-align: center;
-    float: left;
-   }
-    {
-    text-decoration: none; 
-    color: black;
-    display: block;
-    background-color: #EEEEFF;
-    box-shadow: 5px 5px 5px gray;
-    margin-bottom: 2px;
-    margin-right: 2px;
-    border-radius: 5px;
-    border: 3px outset #EEEEFF;
-   }
-   {
-    background-color: #DDDDEE;
-    box-shadow: 3px 3px 3px gray;
-    border: none;
-   } */
-   .logo {
-
+  height: 10%;
+  flex-direction: row;
+  display: flex;
 }
+
+.logo {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: left;
+  padding-left: 20px;
+  background: url(.\simbelogo.png);
+}
+
 .menu {
-    
-}
-    #navtop {
-    padding: more to the right;
-    }
-.navigation {
-    .button {
-         border: none;
-        color: <text color>;
-         padding: 10px 25px;
-         text-align: center;
-        text-decoration: none;
-         display: inline-block;
-         font-size: 16px;
-         margin: 4px 4px;
-         cursor: pointer;
-         border-radius: 8px;
-   }
-.button #login {
-    background-color: orangered>;
-    }
-    .button #login {
-        background-color: orangered>;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  flex-direction: row;
 }
 
+li {
+  display: "inline";
+  flex-direction: column;
+  display: inline;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  flex-direction: row;
+}
+
+#home {
+  border: black;
+  margin: 4px 4px;
+  border-radius: 8px;
+}
+
+#login {
+  background-color: orangered;
+}
+
+#signup {
+  background-color: rgb(95, 46, 211);
+}
+
+.coaching {
+  color: white;
+  text-align: center;
+}
+
+#try {
+  background-color: orangered;
+}
+
+#tour {
+  background-color: rgb(95, 46, 211);
+}
+
+.video {
+  margin: 0 auto;
+  border: 40px solid silver;
+  padding-left: 300px;
+}
 
 .splash {
-    flex-direction: row;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  align-items: center;
+  height: 400px;
+  background: #484848;
+  background: linear-gradient(to bottom, #484848 0%, #484848 72%, #c5c5c5 100%);
 }
 
 .school {
+  text-align: center;
+  max-width: 100%;
+}
 
+table {
+  height: 300px;
+  text-align: center;
+  max-width: 100%;
+}
+
+#mission td,
+#mission th {
+  border: 1px solid white;
+  padding: 8px;
+}
+.mission {
+  flex-direction: row;
+  height: 20%;
 }
 
 .social {
-
+  display: inline-flex;
+}
+ul.blockquote {
+  list-style-image: url(".\quoteicon.jpg");
 }
 
-
-
-
-
-
-
-
-
-
-
-.button {
+/* .button {
     background-color: <background color>;
-     border: none;
+    border: none;
     color: <text color>;
-     padding: 10px 25px;
-     text-align: center;
+    padding: 10px 25px;
+    text-align: center;
     text-decoration: none;
-     display: inline-block;
-     font-size: 16px;
-     margin: 4px 4px;
-     cursor: pointer;
-     border-radius: 8px;
-   }
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+    border-radius: 8px; */
+
+/* list-style-type: none;
+      width: 7em;
+      text-align: center;
+      float: left;
+     }
+      {
+      text-decoration: none; 
+      color: black;
+      display: block;
+      background-color: #EEEEFF;
+      box-shadow: 5px 5px 5px gray;
+      margin-bottom: 2px;
+      margin-right: 2px;
+      border-radius: 5px;
+      border: 3px outset #EEEEFF;
+     }
+     {
+      background-color: #DDDDEE;
+      box-shadow: 3px 3px 3px gray;
+      border: none;
+     } */
+
+#twitter {
+  background-color: rgb(42, 226, 233);
+}
+
+#facebook {
+  background-color: #1f1cc7;
+}

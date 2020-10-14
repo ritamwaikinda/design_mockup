@@ -1,245 +1,277 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>My Page Title</title>
-  <meta name="description" content="My Page Description">
-  <link rel="stylesheet" href="C:\Users\Aikur\Desktop\wyncode\design_mockup\index.css" text/css>
-</head>
-<body>
 
-    <header> 
-        <div class="logo">
-            <img src ahref="images/simbe logo.png" />
-        </div>
-        <nav class="menu" id="navtop">
-            <!-- flex direction row -->
-            <ul>
-                <li id="home">HOME</li>
-                <li>TOUR</li>
-                <li>PRICING</li>
-                <li>ABOUT</li>
-                <li>CONTACT</li>
-            </ul>
-        </nav>
-        <div class="registration">
-            <div id="login">
-                <button>SIGN UP</button>
-            </div>
-            <div id="signup">
-                <button onclick="location.href('http://www.google.com');" value="Redirect">LOGIN</button>
-            </div>
-        </div>
+  <head>
+    <meta charset="utf-8">
+    <title>My Page Title</title>
+    <meta name="description" content="My Page Description">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="stylesheet" href="index.css" type="text/css">
+  </head>
+
+  <body>
+
+    <header>
+      <img src=".\simbelogo.png" class="logo" />
+      <!-- <nav class="menu" id="navtop"> -->
+      <!-- flex direction row -->
+      <ul class="menu" id="navtop">
+        <li>HOME</li>
+        <li>TOUR</li>
+        <li>PRICING</li>
+        <li>ABOUT</li>
+        <li>CONTACT</li>
+      </ul>
+      <!-- </nav> -->
+      <!-- <div class="registration"> -->
+      <ul class="login">
+        <button id="login">SIGN UP</button>
+          <button id="signup" onclick="location.href('http://www.google.com');" value="Redirect">LOGIN</button>
+      </ul>
     </header>
 
     <div class="splash">
-        <!-- This will be background -->
-        <div class="coaching">
-            <p>
-            <!-- Header Video Coaching -->
-            Video coaching to improve student achievement
-            </p>
-            <p>
-            <!-- text about video coaching-->
-            Sibme is a private video collaboration and development tool designed to take you and everyone around you to the next level.
-            </p>
-        </div>
-        <div class="trial">
-            <p class="tryit">
-            <!-- button -->
-            <button>TRY IT FREE</button>
-            </p>
-            <p class="tour">
-            <!-- button -->
-            <button>PRODUCT TOUR</button>
-            </p>
-        </div>
-        <div>
-            <!-- introductory video -->
-        </div>
+      <!-- This will be background -->
+      <div class="coaching">
+        <h1>
+          <!-- Header Video Coaching -->
+          Video coaching to improve student achievement
+        </h1>
+        <h3>
+          <!-- text about video coaching-->
+          Sibme is a private video collaboration and development tool designed to take you and everyone around you to the next level.
+        </h3>
+      </div>
+      <div class="trial">
+          <!-- button -->
+          <button id="try">TRY IT FREE</button>
+          <!-- button -->
+          <button id="tour">PRODUCT TOUR</button>
+      </div>
+      <div>
+        <!-- introductory video -->
+        <video width="288" height="216" controls>
+        <source src="movie.mp4" type="video/mp4" id="video">
+          </video>
+      </div>
     </div>
-        
+
     <div class="school">
-        <p>
-            <!-- header about improving schools -->
-            How does SIBME improve schools?
-        </p>
-        <p>
-            <!-- text about improving schools -->
-            Sibme allows teachers, administrators, and school leaders to discuss, share and access instructional best practises as they happen in the classroom.
-        </p>
+      <h1>
+        <!-- header about improving schools -->
+        How does SIBME improve schools?
+      </h1>
+      <h3>
+        <!-- text about improving schools -->
+        Sibme allows teachers, administrators, and school leaders to discuss, share and access instructional best practises as they happen in the classroom.
+      </h3>
     </div>
 
     <div class="mission">
-        <p class="observe">
-            <img src ahref="images/evaluate.png" />
-            <p class="title">
-                <!-- observe title -->
-                Observe
-            </p>
-            <p class="statement">
-                <!-- observe statement -->
-                See every classroom at your
-                <br>
-                leisure
-            </p>
-        </p>
-        <p class="evaluate">
-            <img src ahref="images/evaluate.png" />
-            <p class="title">
-                <!-- evaluate title -->
-                Evaluate & develope
-            </p>
-            <p class="statement">
-                <!-- evaluate "DEVELOPE" TYPO BY CLIENT statement -->
-                Find and grow those rock
-                <br>
-                star teacher
-            </p>
-        </p>
-        <p class="collaborate">
-            <img src ahref="images/collaborate.png" />
-            <p class="title">
-                <!-- collaborate title -->
-                Collaborate
-            </p>
-            <p class="statement">
-                <!-- collaborate statement -->
-                Simbe keeps teams, depart-
-                <br>
-                ments and schools working
-                <br>
-                and growing together.
-            </p>
-        </p>
-        <p class="academic">
-            <img src ahref="images/academic.png" />
-            <p class="title">
-                <!-- academic title -->
-                Academic gain
-            </p>
-            <p class="statement">
-                <!-- academic statement -->
-                Better teacher = increased
-                <br>
-                student achievement
-            </p>
-        </p>
+    <table id="mission" style="table-layout: fixed; width: 100%">
+        <td style="word-wrap: break-word">
+        <tr>
+          <th><img src=".\observe.png" /></th>
+          <th><img src=".\evaluate.png" /></th>
+          <th><img src=".\collaborate.png" /></th>
+          <th><img src=".\academic.png" /></th>
+        </tr>
+        <tr>
+          <td>Observe</td>
+          <td>Evaluate</td>
+          <td>Collaborate</td>
+          <td>Academic</td>
+        </tr>
+        <tr>
+          <td>See every classroom at your leisure</td>
+          <td>Find and grow those rock star teachers</td>
+          <td>Simbe keeps teams, departments, and schools working and growing together</td>
+          <td>Better teacher = increased student achievement</td>
+        </tr>
+        </td>
+    </table>
     </div>
+
+
+    <!-- <div class="mission">
+      <div class="observe">
+        <img src=".\observe.png" />
+        <h2 class="title">
+          <!-- observe title -->
+          <!-- Observe -->
+        <!-- </h2>
+        <h4 class="statement"> -->
+          <!-- observe statement -->
+          <!-- See every classroom at your
+          <br>
+          leisure
+        </h4>
+      </div> --> -->
+
+      <!-- <div class="evaluate">
+        <img src=".\evaluate.png" />
+        <h2 class="title"> -->
+          <!-- evaluate title -->
+          <!-- Evaluate & develope
+        </h2>
+        <h4 class="statement">
+          <!-- evaluate "DEVELOPE" TYPO BY CLIENT statement -->
+          <!-- Find and grow those rock -->
+          <!-- <br>
+          star teacher
+        </h4>
+      </div> --> -->
+
+      <!-- <div class="collaborate">
+        <img src=".\collaborate.png" />
+        <h2 class="collaborate">
+          collaborate title
+          Collaborate
+        </h2>
+        <!-- <h4 class="statement">
+          <!-- collaborate statement -->
+          <!-- Simbe keeps teams, depart-
+          <br>
+          ments and schools working
+          <br>
+          and growing together.
+        </h4>
+      </div>
+
+      <!-- <div class="academic">
+        <img src=".\academic.png" />
+        <h2 class="academic">
+          academic title
+          Academic gain
+          </h2> -->
+           <!-- <h4 class="statement"> -->
+          <!-- academic statement -->
+          <!-- Better teacher = increased
+          <br>
+          student achievement
+        </h4>
+      </div>
+
 
     <div class="social">
-    <!-- three blocks in a ROW -->
-        <div class="blog">
-            <p class="title">
-                <!-- Draws attention to blogs -->
-                Recent Blog Posts
-            </p>
-            <ul>
-                <!-- class lione will be bigger with logo/icon for bullet point -->
-                <!-- class two will be smaller with nothing for a bullet point -->
-                <li class="lione">Lorem Ipsum is simply dummy text</li>
-                <li class="litwo">15th Oct, 2012</li>
-                <li class="lione">Lorem Ipsum is simply dummy text</li>
-                <li class="litwo">15th Oct, 2012</li>
-                <li class="lione">Lorem Ipsum is simply dummy text</li>
-                <li class="litwo">15th Oct, 2012</li>
-            </ul>
-        </div>
-        <div class="quotes">
-            <p class="title">
-            <!-- draws attention to comments -->
-            What people are saying
-            </p>
-            <ul class="blockquote">
-                <!-- column of two quotes -->
-            <!-- blockquote -->
-            <li id="quote">I want to be on dhsajh</li>
-            <li>want to be on dhsajh</li>
-            <li>want to be on dhsajh</li>
-            <li>grells.</li>
-            <br>
-             <span id="name"> --Tanveer Junamed </span> from Liverpool
-            <!-- blockquote -->
-            <li id="quote">I want to be on dhsajh</li>
-            <li>want to be on dhsajh</li>
-            <li>want to be on dhsajh</li>
-            <li>grells.</li>
-            <br>
-            <span id="name"> --Tanveer Junamed </span> from Liverpool
-            </div>
-        </div>
-        <div class="tweets">
-            <div class="top">
-                <!-- flex direction row -->
-                <p class="title">
-                <!-- draws attention to favorite tweets -->
-                Favorite Tweets
-                </p>
-                <p class="follow">
-                <!-- button -->
-                <button>follow @sibme</button>
-                </p>
-            </div>
-            <div class="tweetone"> 
-                <!-- flex box direction row -->
-                <img src ahref="images/twitterheart.png" />
-                <ul class="tweetonetext" class="wider">
-                    <li><scan id="heart">Popular Shots</scan>@popularshots</li>
-                    <li><scan id="heart">Assignment by</scan><ahref="#">@tjunayed</a> - <ahref="#">bit.ly/123</a></li>
-                    <li>Expand</li>
-                </ul>
-                <p>04 Sep</p>
-            </div>
-            <!-- tweet two and three have the same image - remove this comment when done -->
-            <div class="tweettwo"> 
-                <!-- flex box direction row -->
-                <img src ahref="images/twitterman.png" />
-                <ul class="tweettwotext" class="wider">
-                    <li><scan>Shaun Moynihan</scan>@shaunmoynihan</li>
-                    <li><a href="#">@kyee</a> If I wee dhkjd dfhjdsf jhd hdks jhsdf</li>
-                    <li><a href="images/location.png">Expand</a></li>
-                </ul>
-                <p>04 Sep</p>
-            </div>
-            <div class="tweetthree" class="wider"> 
-                <!-- flex box direction row -->
-                <img src ahref="images/twitter.png" />
-                <ul class="tweetthreetext">
-                    <li><scan>Shaun Moynihan</scan>@shaunmoynihan</li>
-                    <li><a href="#">@kyee</a> If I wee dhkjd dfhjdsf jhd hdks jhsdf</li>
-                    <li>Expand</li>
-                </ul>
-                <p>30 Jul</p>
-            </div>
-        </div>
+      <!-- three blocks in a ROW -->
+      <div class="blog">
+        <p class="title">
+          <!-- Draws attention to blogs -->
+          Recent Blog Posts
+        </p>
+        <ul>
+          <!-- class lione will be bigger with logo/icon for bullet point -->
+          <!-- class two will be smaller with nothing for a bullet point -->
+          <li class="lione">Lorem Ipsum is simply dummy text</li>
+          <li class="litwo">15th Oct, 2012</li>
+          <li class="lione">Lorem Ipsum is simply dummy text</li>
+          <li class="litwo">15th Oct, 2012</li>
+          <li class="lione">Lorem Ipsum is simply dummy text</li>
+          <li class="litwo">15th Oct, 2012</li>
+        </ul>
+      </div>
+      <div class="quotes">
+        <p class="title">
+          <!-- draws attention to comments -->
+          What people are saying
+        </p>
+        <ul class="blockquote">
+          <!-- column of two quotes -->
+          <!-- blockquote -->
+          <li class="quote">I want to be on dhsajh</li>
+          <li>want to be on dhsajh</li>
+          <li>want to be on dhsajh</li>
+          <li>grells.</li>
+          <br>
+          <span class="name"> --Tanveer Junamed </span> from Liverpool
+          <!-- blockquote -->
+          <li class="quote">I want to be on dhsajh</li>
+          <li>want to be on dhsajh</li>
+          <li>want to be on dhsajh</li>
+          <li>grells.</li>
+          <br>
+          <span class="name"> --Tanveer Junamed </span> from Liverpool
+        </ul>
+    </div>
+    <div class="tweets">
+      <div class="top">
+        <!-- flex direction row -->
+        <p class="title">
+          <!-- draws attention to favorite tweets -->
+          Favorite Tweets
+        </p>
+        <p class="follow">
+          <!-- button -->
+          <button>follow @sibme</button>
+        </p>
+      </div>
+      <div class="tweetone">
+        <!-- flex box direction row -->
+        <img src="images/twitterheart.png" />
+        <ul class="tweetonetext">
+          <li>
+            <scan id="heart">Popular Shots</scan>@popularshots
+          </li>
+          <li>
+            <scan class="heart">Assignment by</scan>
+            <a href="#">@tjunayed</a> - <a href="#">bit.ly/123</a>
+          </li>
+          <li>Expand</li>
+        </ul>
+        <p>04 Sep</p>
+      </div>
+      <!-- tweet two and three have the same image - remove this comment when done -->
+      <div class="tweettwo">
+        <!-- flex box direction row -->
+        <img src="images/twitterman.png" />
+        <ul class="tweettwotext">
+          <li>
+            <scan>Shaun Moynihan</scan>@shaunmoynihan
+          </li>
+          <li><a href="#">@kyee</a> If I wee dhkjd dfhjdsf jhd hdks jhsdf</li>
+          <li><a href="images/location.png">Expand</a></li>
+        </ul>
+        <p>04 Sep</p>
+      </div>
+      <div class="tweetthree">
+        <!-- flex box direction row -->
+        <img src="images/twitter.png" />
+        <ul class="tweetthreetext">
+          <li>
+            <scan>Shaun Moynihan</scan>@shaunmoynihan
+          </li>
+          <li><a href="#">@kyee</a> If I wee dhkjd dfhjdsf jhd hdks jhsdf</li>
+          <li>Expand</li>
+        </ul>
+        <p>30 Jul</p>
+      </div>
     </div>
     <!-- that's it, that's the end of your five(5) divs between header and footer. WooHoo! -->
-</body>
+  </body>
 
-<footer>
+  <footer>
     <nav class="menu" id="navbottom">
-        <!-- flex direction row -->
-        <ul>
-            <li>HOME</li>
-            <li>TOUR</li>
-            <li>PRICING</li>
-            <li>ABOUT</li>
-            <li>CONTACT</li>
-        </ul>
+      <!-- flex direction row -->
+      <ul>
+        <li>HOME</li>
+        <li>TOUR</li>
+        <li>PRICING</li>
+        <li>ABOUT</li>
+        <li>CONTACT</li>
+      </ul>
     </nav>
     <div class="socialmedia">
-        <div id="twitter">
-            <!-- button (if you have time, try making the buttons. change this to li with id so you can haev individual icons)-->
-            <button>TWITTER</button>
-        </div>
-        <div id="facebook">
-            <!-- button (if you have time, try making the buttons. change this to li with id so you can haev individual icons)-->
-            <button>FACEBOOK</button>
-        </div>
+        <!-- button (if you have time, try making the buttons. change this to li with id so you can haev individual icons)-->
+        <button id="twitter">TWITTER</button>
+        <!-- button (if you have time, try making the buttons. change this to li with id so you can haev individual icons)-->
+        <button id="facebook">FACEBOOK</button>
+      </div>
     </div>
     <p class="license">
-        <!-- license, rights, llc etc -->
-        All rights reserved 2012. SIBME
+      <!-- license, rights, llc etc -->
+      All rights reserved 2012. SIBME
     </p>
-</footer>
+  </footer>
+
 </html>
