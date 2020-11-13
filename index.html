@@ -6,17 +6,16 @@
     <title>My Page Title</title>
     <meta name="description" content="My Page Description">
     <link rel="stylesheet" href="index.css" type="text/css">
-    <link rel="stylesheet" href="index.css" type="text/css">
   </head>
 
   <body>
 
     <header>
-      <img src=".\simbelogo.png" class="logo" />
+      <img src="./images/simbelogo.png" class="logo" />
       <!-- <nav class="menu" id="navtop"> -->
       <!-- flex direction row -->
       <ul class="menu" id="navtop">
-        <li>HOME</li>
+        <li id="topHome">HOME</li>
         <li>TOUR</li>
         <li>PRICING</li>
         <li>ABOUT</li>
@@ -24,10 +23,10 @@
       </ul>
       <!-- </nav> -->
       <!-- <div class="registration"> -->
-      <ul class="login">
-        <button id="login">SIGN UP</button>
-          <button id="signup" onclick="location.href('http://www.google.com');" value="Redirect">LOGIN</button>
-      </ul>
+      <div class="login">
+        <button id="login">SIGNUP</button>
+        <button id="signup" onclick="location.href('http://www.google.com');" value="Redirect">LOGIN</button>
+      </div>
     </header>
 
     <div class="splash">
@@ -50,9 +49,8 @@
       </div>
       <div>
         <!-- introductory video -->
-        <video width="288" height="216" controls>
-        <source src="movie.mp4" type="video/mp4" id="video">
-          </video>
+        <iframe src="https://player.vimeo.com/video/147642540"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+        </iframe>
       </div>
     </div>
 
@@ -71,12 +69,12 @@
     <table id="mission" style="table-layout: fixed; width: 100%">
         <td style="word-wrap: break-word">
         <tr>
-          <th><img src=".\observe.png" /></th>
-          <th><img src=".\evaluate.png" /></th>
-          <th><img src=".\collaborate.png" /></th>
-          <th><img src=".\academic.png" /></th>
+          <th><img src="./images/observe.png" /></th>
+          <th><img src="./images/evaluate.png" /></th>
+          <th><img src="./images/collaborate.png" /></th>
+          <th><img src="./images/academic.png" /></th>
         </tr>
-        <tr>
+        <tr class="title">
           <td>Observe</td>
           <td>Evaluate</td>
           <td>Collaborate</td>
@@ -91,66 +89,6 @@
         </td>
     </table>
     </div>
-
-
-    <!-- <div class="mission">
-      <div class="observe">
-        <img src=".\observe.png" />
-        <h2 class="title">
-          <!-- observe title -->
-          <!-- Observe -->
-        <!-- </h2>
-        <h4 class="statement"> -->
-          <!-- observe statement -->
-          <!-- See every classroom at your
-          <br>
-          leisure
-        </h4>
-      </div> --> -->
-
-      <!-- <div class="evaluate">
-        <img src=".\evaluate.png" />
-        <h2 class="title"> -->
-          <!-- evaluate title -->
-          <!-- Evaluate & develope
-        </h2>
-        <h4 class="statement">
-          <!-- evaluate "DEVELOPE" TYPO BY CLIENT statement -->
-          <!-- Find and grow those rock -->
-          <!-- <br>
-          star teacher
-        </h4>
-      </div> --> -->
-
-      <!-- <div class="collaborate">
-        <img src=".\collaborate.png" />
-        <h2 class="collaborate">
-          collaborate title
-          Collaborate
-        </h2>
-        <!-- <h4 class="statement">
-          <!-- collaborate statement -->
-          <!-- Simbe keeps teams, depart-
-          <br>
-          ments and schools working
-          <br>
-          and growing together.
-        </h4>
-      </div>
-
-      <!-- <div class="academic">
-        <img src=".\academic.png" />
-        <h2 class="academic">
-          academic title
-          Academic gain
-          </h2> -->
-           <!-- <h4 class="statement"> -->
-          <!-- academic statement -->
-          <!-- Better teacher = increased
-          <br>
-          student achievement
-        </h4>
-      </div>
 
 
     <div class="social">
@@ -176,24 +114,20 @@
           <!-- draws attention to comments -->
           What people are saying
         </p>
-        <ul class="blockquote">
+        <ul>
           <!-- column of two quotes -->
           <!-- blockquote -->
-          <li class="quote">I want to be on dhsajh</li>
-          <li>want to be on dhsajh</li>
-          <li>want to be on dhsajh</li>
-          <li>grells.</li>
-          <br>
-          <span class="name"> --Tanveer Junamed </span> from Liverpool
+          <div class="quoteSpace">
+          <li class="quote">I want to be on dhsajh want to be on dhsajh want to be on dhsajh grells.</li>
+          <span class="name"> --Tanveer Junamed </span> <span class="address"> from Liverpool</span>
+          </div>
           <!-- blockquote -->
-          <li class="quote">I want to be on dhsajh</li>
-          <li>want to be on dhsajh</li>
-          <li>want to be on dhsajh</li>
-          <li>grells.</li>
-          <br>
-          <span class="name"> --Tanveer Junamed </span> from Liverpool
+          <div class="quoteSpace">
+          <li class="quote">I want to be on dhsajh want to be on dhsajh want to be on dhsajh grells.</li>
+          <span class="name"> --Tanveer Junamed </span> <span class="address"> from Liverpool</span>
+          </div>
         </ul>
-    </div>
+      </div>
     <div class="tweets">
       <div class="top">
         <!-- flex direction row -->
@@ -203,75 +137,73 @@
         </p>
         <p class="follow">
           <!-- button -->
-          <button>follow @sibme</button>
+          <button id="followSimbe">follow @sibme</button>
         </p>
       </div>
+      
       <div class="tweetone">
         <!-- flex box direction row -->
-        <img src="images/twitterheart.png" />
-        <ul class="tweetonetext">
-          <li>
-            <scan id="heart">Popular Shots</scan>@popularshots
+        <img src="./images/twitterheart.jpg" class="tweetpic" />
+        <ul class="tweet">
+          <li>Popular Shots <span class="light">@popularshots</span> <span class="date">04 Sep</span>
           </li>
-          <li>
-            <scan class="heart">Assignment by</scan>
-            <a href="#">@tjunayed</a> - <a href="#">bit.ly/123</a>
+          <li>Assignment by <a href="#">@tjunayed</a> - <a href="#">bit.ly/123</a>
           </li>
-          <li>Expand</li>
+          <li class="light">Expand</li>
         </ul>
-        <p>04 Sep</p>
       </div>
+
       <!-- tweet two and three have the same image - remove this comment when done -->
       <div class="tweettwo">
         <!-- flex box direction row -->
-        <img src="images/twitterman.png" />
-        <ul class="tweettwotext">
-          <li>
-            <scan>Shaun Moynihan</scan>@shaunmoynihan
+        <img src="./images/twitterman.jpg" class="tweetpic" />
+        <ul class="tweet">
+          <li>Shaun Moynihan <scan class="light">@shaunmoynihan</scan> <scan class="date">04 Sep</scan>
           </li>
           <li><a href="#">@kyee</a> If I wee dhkjd dfhjdsf jhd hdks jhsdf</li>
-          <li><a href="images/location.png">Expand</a></li>
-        </ul>
-        <p>04 Sep</p>
+          <li class="light">Expand</li>
+        </ul>  
       </div>
+
       <div class="tweetthree">
         <!-- flex box direction row -->
-        <img src="images/twitter.png" />
-        <ul class="tweetthreetext">
-          <li>
-            <scan>Shaun Moynihan</scan>@shaunmoynihan
+        <img src="./images/twitterman.jpg" class="tweetpic" />
+        <ul class="tweet">
+          <li>Shaun Moynihan <scan class="light">@shaunmoynihan</scan> <scan class="date">30 Jul</scan>
           </li>
           <li><a href="#">@kyee</a> If I wee dhkjd dfhjdsf jhd hdks jhsdf</li>
-          <li>Expand</li>
+          <li class="light">Expand</li>
         </ul>
-        <p>30 Jul</p>
       </div>
+
     </div>
+  </div>
     <!-- that's it, that's the end of your five(5) divs between header and footer. WooHoo! -->
   </body>
 
   <footer>
-    <nav class="menu" id="navbottom">
+    <nav id="navbottom">
       <!-- flex direction row -->
-      <ul>
-        <li>HOME</li>
+      <ul class="menu">
+        <li id="bottomHome">HOME</li>
         <li>TOUR</li>
         <li>PRICING</li>
         <li>ABOUT</li>
         <li>CONTACT</li>
       </ul>
     </nav>
+    <div class="final">
     <div class="socialmedia">
         <!-- button (if you have time, try making the buttons. change this to li with id so you can haev individual icons)-->
         <button id="twitter">TWITTER</button>
         <!-- button (if you have time, try making the buttons. change this to li with id so you can haev individual icons)-->
         <button id="facebook">FACEBOOK</button>
       </div>
-    </div>
     <p class="license">
       <!-- license, rights, llc etc -->
       All rights reserved 2012. SIBME
     </p>
+    </div>
   </footer>
 
 </html>
